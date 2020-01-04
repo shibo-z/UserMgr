@@ -5,7 +5,7 @@ use users;
 create table tb_users(
 `id` BIGINT primary key AUTO_INCREMENT,
 `user_name` varchar(50) not NULL,
-`gender` varchar(1) not null COMMIT '男：1 ; 女：0',
+`gender` varchar(1) not null COMMENT '男：1 ; 女：0',
 `age` int(3) not null,
 `phone` varchar(11) not null default '',
 `created_by` varchar(32)     NOT NULL DEFAULT '' COMMENT '创建人',
